@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cloud Miner - Gerenciador</title>
+
+    <!-- Fontes personalizadas para este modelo-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Estilos personalizados para este modelo-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Cloud <sup>Miner</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Gerenciador</span></a>
+            </li>
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="free.html">
+					<i class="fas fa-comments-dollar"></i>
+                    <span>Plano Free</span></a>
+            </li>
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="basico.html">                  
+					<i class="fas fa-comment-dollar"></i>
+                    <span>Plano Básico</span></a>
+            </li>
+			
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="inter.html">
+                    <i class="fab fa-btc"></i>
+                    <span>Plano Inter</span></a>
+            </li>
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="avancado.html">
+                    <i class="fab fa-bitcoin"></i>
+                    <span>Plano Avançado</span></a>
+            </li>
+									
+			 <li class="nav-item active">
+                <a class="nav-link" href="deposito.html">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Deposito</span></a>
+            </li>
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="receber.html">
+                    <i class="fas fa-receipt"></i>
+                    <span>Retirar</span></a>
+            </li>
+
+			</li>
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="afiliado.html">
+                    <i class="fab fa-affiliatetheme"></i>
+                    <span>Afiliados</span></a>
+            </li>
+
+			
+			<li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-history"></i>
+                    <span>Histórico</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Histórico:</h6>
+                        <a class="collapse-item" href="hist_depositos.html">Deposito</a>
+                        <a class="collapse-item" href="hist_retirada.html">Retirada</a>
+                    </div>
+                </div>
+            </li>
+			
+			<!-- Divider -->
+            <hr class="sidebar-divider">
+			
+			<li class="nav-item active">
+                <a class="nav-link" href="faq2.html">
+                    <i class="fas fa-question"></i>
+                    <span>FAQ</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+
+         
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Centro de Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Centro de Alertas
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">12, Dezembro 2021</div>
+                                        <span class="font-weight-bold">Faça seu Deposito para Retiradas!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Doações em Dogecoin</div>
+                                        Envie no Endereço = DEutEhxH5FH684sXpcDyiRPdanRKdk1heF
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">2, Dezembro 2021</div>
+                                        90 Dias De Mineração, Altos Rendimentoa.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Centro de Mensagens -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -- Centro de Mensagens -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Centro de Mensagens
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+									
+									
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Doação em Dogecoin.
+                                            </div>
+                                        <div class="small text-gray-500">Envie Para o Endereço = DEutEhxH5FH684sXpcDyiRPdanRKdk1heF</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - Usuario informações -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Definições
+                                    
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Atividades
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Sair
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Perguntas Frequentes</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Enviar Deposito</a>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+
+
+                            <!-- Ajuda FAQ 1-->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">O que é a plataforma Cloud Miner ? </h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Cloud Miner é uma plataforma de mineração em nuvem dogecoin, com uma fazenda de mineração dogecoin física por trás dela.</p>
+                                    
+                                </div>
+                            </div>
+
+
+                            <!-- Ajuda FAQ 2 -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Onde Cloud Miner Investe Dinheiro?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Investimos o dinheiro na negociação de inteligência artificial em criptomoedas, utilizamos a melhor inteligência artificial do mercado com rentabilidade mensal estável.</p>
+                                    
+                                </div>
+                            </div>
+
+
+                            <!-- Ajuda FAQ 3-->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Qual lucro dos investidores?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Oferecemos aos investidores lucros com base em seu poder hash.</p>
+                                    
+                                </div>
+                            </div>
+
+
+                            <!-- Ajuda FAQ 4-->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Como faço um depósito?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Para fazer um depósito, vá para <a href="deposito.html"> Depósito </a>, lá você verá um endereço dogecoin para depósito. atualmente, aceitamos apenas dogecoins.</p>
+                                   
+                                </div>
+                            </div>
+
+
+                            <!-- Ajuda FAQ 5-->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Qual é o valor mínimo que posso investir?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>O valor mínimo do depósito é 50 DOGECOINS. Aceitamos Apenas Dogecoins.</p>
+                                   
+                                </div>
+                            </div>
+
+
+                            <!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Qual é o valor mínimo para fazer um saque</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>O valor mínimo para fazer um saque é de 50 DOGECOINS. Usar o Endereço Cadastrado.</p>
+                                   
+                                </div>
+                            </div>
+
+
+                            <!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">É cobrada uma comissão para fazer um saque?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Sim, Cobramos 1 a 5 DOGE de comissão de nossos investidores sobre seus saques.</p>
+                                   
+                                </div>
+                            </div>
+
+
+							<!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Em que moeda você faz saques?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Fazemos saques apenas na criptomoeda DOGECOIN. Use o Endereço DOGECOIN Cadastrado.</p>
+                                   
+                                </div>
+                            </div>
+
+
+							<!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Fiz um pedido de saque, agora o que faço?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Levará algumas horas para processar sua retirada. Após 3 Confirmações o Processo é Concluido.</p>
+                                   
+                                </div>
+                            </div>
+
+
+
+
+							<!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Você precisa comprar HASH POWER para fazer um saque?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Você não precisa fazer nenhum depósito, você pode sacar com o GHS gratuito ou com ganhos de afiliado.</p>
+                                   
+                                </div>
+                            </div>
+
+
+							<!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Que lucro de afiliado posso obter?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Para cada afiliado você pode ganhar 20% do seu depósito.</p>
+                                   
+                                </div>
+                            </div>
+
+
+							<!-- Ajuda FAQ -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Como faço para que um amigo seja meu afiliado?</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Para que seu amigo se associe como seu afiliado, ele deve se registrar com o link de afiliado, que pode ser encontrado na página Afiliado no painel de controle.
+                                    <br> É muito importante que seu amigo crie uma nova conta para ingressar.</p>
+                                   
+                                </div>
+                            </div>
+
+
+                
+                                </div>
+                            </div>
+
+                         
+
+                </div>
+            
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Domingos Filho Dev 2021</span></br>
+						<span>Doações em Dogecoin Serão Bem Recebidas</span></br>
+						<span>Envie Para o Endereço = DEutEhxH5FH684sXpcDyiRPdanRKdk1heF </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        
+        <!-- End of Content Wrapper -->
+
+   
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal Sai---->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja Mesmo Sair?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Clique em "Logout" logo abaixo para encerrar sua sessão atual.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
